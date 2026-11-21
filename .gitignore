@@ -1,0 +1,16 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+!backend/artifacts/evaluation.json
+!backend/artifacts/fraud_detection_model.joblib
+!backend/artifacts/holdout_transactions.csv
+backend/data/*
+!backend/data/.gitkeep
+!backend/data/dataset_info.json
+!backend/data/credit_card_fraud_10k.csv
+.venv/
+venv/
+.pytest_cache/

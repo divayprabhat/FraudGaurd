@@ -1,0 +1,17 @@
+{
+  "_source": "Values copied from the saved cell outputs of Fraud_Detection_Model_and_Monitoring.ipynb. Nothing here is estimated, except confusion_matrix, which is derived exactly from the reported test precision/recall/FPR and class support (30 fraud / 1970 legitimate).",
+  "dataset": {"rows": 10000, "fraud": 151, "legitimate": 9849, "fraud_rate": 0.0151, "split": {"train": 6000, "validation": 2000, "test": 2000}},
+  "selected_model": "Random Forest",
+  "selection_metric": "PR-AUC (validation)",
+  "model_version": "fraud-risk-model-v1",
+  "threshold": 0.32,
+  "threshold_selection": "Maximum F1 on validation set",
+  "threshold_validation": {"precision": 0.967742, "recall": 1.0, "f1": 0.983607, "alerts_per_1000": 15.5},
+  "validation_summary": [
+    {"model": "Random Forest", "pr_auc": 0.998925, "roc_auc": 0.999983, "precision": 1.0, "recall": 0.833333, "f1": 0.909091, "accuracy": null, "fit_seconds": 1.789395},
+    {"model": "Logistic Regression", "pr_auc": 0.646360, "roc_auc": 0.992386, "precision": 0.272727, "recall": 1.0, "f1": 0.428571, "accuracy": null, "fit_seconds": 0.185700}
+  ],
+  "test_metrics": {"accuracy": 0.9985, "precision": 0.9355, "recall": 0.9667, "f1": 0.9508, "roc_auc": 0.9997, "pr_auc": 0.9864, "false_positive_rate": 0.0010},
+  "confusion_matrix": {"tn": 1968, "fp": 2, "fn": 1, "tp": 29, "derived": true},
+  "alert_thresholds": {"high_risk_rate_alert_pct": 5.0, "min_events_for_rate_alert": 100, "p95_latency_alert_ms": 250.0, "min_freshness_sla_compliance_pct": 99.0, "freshness_sla_seconds": 30}
+}
